@@ -50,19 +50,31 @@ MobileNetV2 with transfer learning and fine-tuning was used for currency classif
 
 The project includes an application interface that allows users to process a currency image and obtain:
 
-* Predicted denomination
-* Prediction confidence
-* Class-wise prediction probabilities
+- Predicted denomination
+- Prediction confidence
+- Class-wise prediction probabilities
+
+## Sample Prediction
+
+The model predicts the currency denomination along with its confidence score.
+
+## Model Evaluation
+
+The evaluation script generates:
+
+- Validation accuracy
+- Classification report
+- Confusion matrix
+- Macro F1-score
 
 ## Project Files
 
-* `train.py` - Trains the currency recognition model
-* `predict.py` - Predicts the denomination of a currency image
-* `evaluate_model.py` - Evaluates the trained model and generates performance metrics
-* `app.py` - Streamlit application interface
-* `model/` - Contains the trained model
-* `requirements.txt` - Contains the required Python dependencies
-
+- `train.py` - Trains the currency recognition model
+- `predict.py` - Predicts the denomination of a currency image
+- `evaluate_model.py` - Evaluates the trained model and generates performance metrics
+- `app.py` - Application interface
+- `model/` - Contains the trained model
+- `requirements.txt` - Contains the required Python dependencies
 ## How to Run
 
 ### Install dependencies
